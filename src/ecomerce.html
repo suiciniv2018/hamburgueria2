@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<heade>
+  <title>Vipshamburgueria</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/ecomerce.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</heade>
+
+  <body>
+  <header>
+    <nav class="navbar col-lg-12 col-lg-12 col-sm-12 col-md-12-col-xs-12 col-md-12-col-xls-12" id="navMain">
+      <div class="subnav">
+        <button class="subnavbtn">Home <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="index.html" alt="Promoçõe da semana">Oferta da semana</a>
+          <a href="index.html" alt="Historia loja">Historia</a>
+          <a href="index.html#CArdhamb" alt="Hamburgues historia">hamburgueres</a>
+
+        </div>
+      </div>
+     
+      <div class="subnav">
+        <button class="subnavbtn">Serviços <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="galeriaft.html">Galeria de fotos</a>
+          <a href="ecomerce.html">Deliver</a>
+          <a href="cardapio.html">Cardapio</a>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn">Contatos <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="#Ifood">IFOOD</a>
+          <a href="#instagram">Instagram</a>
+          <a href="#facebook">Facebook</a>
+          <a href="#Whatsapp">whatsapp</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+  <section>
+    <div class="container col-lg-4 col-lg-4 col-sm-4 col-md-4-col-xs-4 col-md-4-col-xls-4" id="ecomercetit">
+      <h1>Vipshamburgueria</h1>
+      <h5>horario de entrega 08:00 as 23:00 10km</h5>
+
+      <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Hamburgueres
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <ul>
+            <li><a class="dropdown-item" href="#ecomercecards">Carne</a></li>
+            <li><a class="dropdown-item" href="#ecomercefrang">Frango</a></li>
+            <li><a class="dropdown-item" href="#ecomercecdcalab">Calabresa</a></li>
+            <li><a class="dropdown-item" href="#ecomercecdVeg">vegetariano</a></li>
+            <li><a class="dropdown-item" href="#ecomercecdComp">Complementos</a></li>
+            <ul>
+        </div>
+      </div>
+
+      <div class="container col-lg-8 col-lg-8 col-sm-8 col-md-8-col-xs-8 col-md-8-col-xls-8" id="ecomercecards">
+        <h1>Hambúrguer de Carne</h1>
+      </div>
+
+      <div class="container col-lg-4 col-lg-4 col-sm-4 col-md-4-col-xs-4 col-md-4-col-xls-4" id="contcarnFR">
+        <img src="../img/SBKV6555.JPG" class="responsive" id="contcarnIMG00"
+          alt="comprar lanche americanopolis">
+        <div class="card" id="cardcarn00">
+          <h2>Americanopolis</h2>
+        <p class="float-esquerda"> lanche de brioche, carne ffksfsidfjsldfawdwdawddawd<p>
+        </p> sdnlakdfknffkdnafdankdawdwdwda</p>
+        </div>
+      </div>
+
+      <div class="container container col-lg-2 col-lg-2 col-sm-2 col-md-2-col-xs-2 col-md-2-col-xls-2">
+        <!-- The Modal -->
+        <button id="bottom01">Comprar</button>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Americanopolis</h2>
+            <div class="zoom">
+            <img src="../img/SBKV6555.JPG" class="responsive" id="IMGMOda">  
+          </div>
+          </div>
+          <div class="modal-body">
+            <p>Formas de pagamentos</p>
+            <p class="PagaMentos">
+              <select name="opcaopag" id="opcaopag">
+                <option>Cartão de credito</option>
+                <option>Cartão de debito</option>
+                <option>Dinheiro</option>
+              </select>
+            </p>
+          </div>
+
+          <div class="modal-footer">
+           
+          <h3>Detalhes da compra</h3>
+
+          <p class="valores">Valor de 1 carne: <span id="valor-carne">18.00</span></p>
+          <p class="valores">Valor de 2 carne: <span id="valor-carne2">26.00</span></p>
+          <p class="valores">Valor de 3 carne: <span id="valor-carne3">30.00</span></p>
+        
+
+          <form class="menu-compras">
+            <p>
+              <label for="quantitya">Quantidade carne</label>
+              <input type="number" id="quantitya" name="quantitya" min="0" max="3">
+            </p>
+            <p>
+              <label for="quantityb">Quantidade lanche</label>
+
+              <input type="number" id="quantityb" name="quantityb" min="0" max="999">
+            </p>
+            
+            <button type="submit" id="buttonCP">Calcular</button>
+          </form>
+          <p class="tot">Total:<span id="total"></span></p>
+          <p class="comprar">
+            <img src="../img/carrinho2.png" alt="carrinho compra">
+          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+      <script src="../JS/OpenModal.js" type="text/javascript"></script>
+      <script src="../JS/Somaecomerce.js" type="text/javascript"></script>
+     
+
+    
+    </main>
+  </body>
+</html>

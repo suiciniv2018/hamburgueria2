@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<heade>
+  <title>Vipshamburgueria</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/ecomerce.css" rel="stylesheet" type="text/css">
+  <link href="../css/login.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</heade>
+
+<body onload="Request.js">
+  <!--alerta para navegador-->
+  <!--menu navegação-->
+  <header>
+    <nav class="navbar col-lg-12 col-lg-12 col-sm-12 col-md-12-col-xs-12 col-md-5-col-xls-12" id="navMain">
+      <div class="subnav">
+        <button class="subnavbtn">Home <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="index.html">Oferta da semana</a>
+          <a href="CArdhist">Historia</a>
+          <a href="CArdhamb">hamburgueres</a>
+
+        </div>
+      </div>
+      <!--submenu navegação-->
+      <div class="subnav">
+        <button class="subnavbtn">Serviços <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="galeriaft.html">Galeria de fotos</a>
+          <a href="ecomerce.html">Deliver</a>
+          <a href="cardapio.html">Cardapio</a>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn">Contatos <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="#Ifood">IFOOD</a>
+          <a href="#instagram">Instagram</a>
+          <a href="#facebook">Facebook</a>
+          <a href="#Whatsapp">whatsapp</a>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="cadastrocp">
+        <form action="https://formspree.io/mwkrqdrw" method="POST"  id="cadastro" >
+          <legend class="lenda">Dados pessoais</legend>
+
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo" required>
+
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+
+          <label for="cpf">CPF</label>
+          <input type="text" class="form-control" id="cpf" name="cpf" placeholder="cpf" required>
+
+          <label for="Endereco">Endereço</label>
+          <input type="text" class="form-control" id="Endereco" name="endereco" placeholder="Endereço" required>
+
+          <label for="numero">Numero</label>
+          <input type="text" class="form-control" id="numero" name="numero" placeholder="Numero" required>
+
+          <label for="complemento">Complemento</label>
+          <input type="text" class="form-control" id="compl" name="complemento" placeholder="Complemento" required>
+          <button id="my-form-button" class="submit">Enviar</button>
+
+          <p id="my-form-status"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="../JS/scriptXhtml.js" type="text/javascript"></script>
+
+</body>
+
+</html>

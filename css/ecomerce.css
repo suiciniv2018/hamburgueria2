@@ -1,0 +1,413 @@
+*,*::before,*::after{box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing: border-box;
+  }
+  
+  html{font-size:18px; /*1rem = 18px*/
+  scroll-behavior: smooth;
+  }
+  body{
+      
+      font-family: 'Open Sans'verdana,sans-serif; 
+      background-image:linear-gradient(to right, #8e0e00,#1f1c18);
+  }
+  /*tornando imagens responsivas*/
+  img {max-width: 100%;}
+  /*reset em alguns elementos*/
+  body,h1,h2,h3,p,figure{
+      margin: 0;
+      padding: 0;
+  }
+nav{
+   background-color: black;
+}
+.navbar{
+    margin: auto;
+    margin-top: 0px;
+    width: 100%;  
+}
+.navbar {
+ 
+  background-color: rgb(22, 22, 22);
+}
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+}
+/* The subnavigation menu */
+.subnav {
+  float: left; 
+}
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; 
+}
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: rgb(197, 171, 171);
+}
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(148, 28, 28);
+  width: 100%;
+}
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+  #ecomercetit{
+    margin-top: 15px;
+      color: white;
+  } 
+  #dropdownMenuLink{
+      color:white!important;
+      border: 1px solid white;
+  }
+  .dropdown-item{
+     color: #1f1c18; 
+     font-size: 18px;
+     margin-left: -25px!important;  
+  }
+ul li:hover{
+    border:none;
+    padding-top:0px;
+    margin-left: -39px;
+    padding-left:30px;
+    padding-bottom: 10px;
+    background-color: rgb(197, 126, 126);
+    list-style-type: none;
+}
+  .dropdown-menu{
+    background-color: whitesmoke;
+  }
+  #ecomercecards{
+      margin: 0px;
+      margin-top: 50px;
+      margin-right: 400px;
+      width: 300px;
+      margin-left: 20px;
+      color: white;
+  }
+  .card{
+  border:solid 2px white;
+  width: 204px!important;
+  margin-top: 60px;
+  margin-left: 10px;
+}
+  .card-img-top{
+      width: 200px; 
+  }
+  .card-text{
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 14px;
+  }
+
+  #contcarnFR{
+    width: 450px;
+    height: 250px;
+    border: cornsilk solid 1px;
+    overflow:hidden;
+  }
+  #contcarnIMG00{
+   margin-top: 30px; 
+  width: 150px;
+  }
+  #cardcarn00{
+    margin-top: -138px;
+    margin-left: 170px;
+    border:none;
+  }
+#IMGMOda{
+margin-top: -40px;
+margin-left: 450px;
+width: 100px;
+height: 100px;
+display: block;
+}
+.zoom-lc{
+  overflow: hidden;
+}
+.zoom img{
+  max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover img {
+	-moz-transform: scale(2.9);
+	-webkit-transform: scale(2.9);
+	transform: scale(2.9);
+}
+.modal,
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color:white;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header {
+  padding: 2px 16px;
+  background-color:white!important;
+  color:black;
+}
+.modal-body {padding: 2px 16px;}
+.modal-body{
+  color:black;
+}
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+  display: block;
+}
+.modal-footer:hover,.modal-footer:focus{
+  background-color: black;
+}
+#myBtn{
+  display: block;
+  margin-top: -50px;
+  margin-left: 320px;
+}
+#contcarnFR1{
+  width: 450px;
+  height: 250px;
+  margin-top: -250px;
+  margin-left: 480px;
+  border: cornsilk solid 1px;
+}
+#contcarnIMG01{
+  margin-top: 30px; 
+  width: 150px;
+}
+#cardcarn01{
+  margin-top: -138px;
+    margin-left: 170px;
+    border:none;
+}
+#myBtn1{
+  display: block;
+  margin-top: -50px;
+  margin-left: 800px;
+}
+#IMGMOda{
+margin-top: -40px;
+margin-left: 450px;
+width: 100px;
+height: 100px;
+display: block;
+}
+.zoom-lc{
+  overflow: hidden;
+}
+.zoom img{
+  max-width: 100%;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+.zoom:hover img {
+	-moz-transform: scale(2.0);
+	-webkit-transform: scale(2.0);
+	transform: scale(2.0);
+}
+.modal,
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color:white;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+.modal-header {
+  padding: 2px 16px;
+  background-color: rgb(20, 19, 19)!important;
+  color:white;
+}
+.modal-body {padding: 2px 16px;}
+.modal-body{
+  color:white;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgb(20, 19, 19);
+}
+.modal-footer {
+  padding: 2px 16px;
+  background-color:rgb(20, 19, 19);
+  color:white;
+  display: block;
+}
+.modal-footer:hover,.modal-footer:focus{
+  background-color:rgb(71, 192, 40);
+}
+#quantitya{
+  color:black;
+}
+#quantityb{
+color: black;
+}
+
+.info{
+  color: whitesmoke;
+  white-space: pre-wrap;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: unset;
+}
+.modal-footer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal-footer h3{
+  flex-direction: row;
+}
+#bottom01{
+display: block;
+  margin-top: -50px;
+  margin-left: 280px;
+  color: #000;
+}
+.float-esquerda{
+  float: left;
+}
+/* botao modal comprar*/
+#buttonCP{
+  color: rgb(20, 19, 19);
+  border-color: solid 1px black;
+  font-weight: bold;
+
+}
+
+.valores :focus{
+
+  font-size: 16px;
+  text-align: justify;
+  margin-left: 10px;
+}
+
+.tot,#total{
+  color: antiquewhite;
+  margin-left: 20px;
+  font-size: 18px;
+}
+#opcaopag{
+  display: block;
+}
+
+.PagaMentos{
+  margin-left: -50px;
+}
+#opcaopag{
+margin-left: 250px;
+width: 150px;
+}
+
+.comprar img {
+  margin-top: 60px;
+  height: 50px;
+  width: 50px;
+  margin-left: 250px;
+}
+
